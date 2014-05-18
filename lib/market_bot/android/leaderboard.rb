@@ -76,6 +76,7 @@ module MarketBot
         @category = category
         @hydra = options[:hydra] || MarketBot.hydra
         @request_opts = options[:request_opts] || {}
+        @max_page = options[:max_page]
         @parsed_results = []
         @pending_pages = []
       end

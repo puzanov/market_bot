@@ -12,7 +12,8 @@ module MarketBot
         results = []
 
         min_page = options[:min_page] || 1
-        max_page = options[:max_page] || 25
+        #max_page = options[:max_page] || @max_page
+        max_page = @max_page
 
         (min_page..max_page).each do |page|
           start_val = (page - 1) * 24
